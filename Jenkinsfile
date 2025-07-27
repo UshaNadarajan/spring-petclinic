@@ -2,11 +2,6 @@ echo "Hello World"
 pipeline {
     agent any
     stages{
-        stage("Checkout"){
-            steps{
-                git branch:'main', url:'https://github.com/UshaNadarajan/spring-petclinic.git'
-            }
-        }
         stage("Build"){
             steps{
                 bat 'mvnw.cmd package'
