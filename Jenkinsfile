@@ -1,4 +1,5 @@
 echo "Hello World"
+echo "Welcome"
 pipeline {
     agent any
     stages{
