@@ -5,7 +5,7 @@ pipeline {
         stage("Build"){
             steps{
                 bat 'mvnw.cmd package'
-                releasenotes()
+                releasenotes();
             }
         }
         stage("Capture"){
